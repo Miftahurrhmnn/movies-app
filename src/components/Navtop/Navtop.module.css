@@ -1,0 +1,57 @@
+.header {
+    width: 100%;
+    height: 66px;
+    background-image: linear-gradient(to right, #285A48, #000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-left: 92px;
+    padding-right: 92px;
+    color: white;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.anchor {
+    color: white;
+    text-decoration: none;
+}
+
+/* Berlaku untuk layar 600px ke atas */
+@media only screen and (min-width: 200px) {
+    .menu {
+        display: none;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Berlaku untuk layar 600px ke atas */
+@media only screen and (min-width: 600px) {
+    .menu {
+        display: none;
+    }
+}
+
+/* Berlaku untuk layar 800px ke atas (menimpa aturan di atasnya) */
+@media only screen and (min-width: 800px) {
+    .menu {
+        display: flex;
+    }
+}
